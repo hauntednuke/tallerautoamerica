@@ -1,0 +1,19 @@
+$verde3d: #0EB04B;
+
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 62.5%;
+    body {
+        min-height: 100%;
+        font-size: 1.6rem;
+    }
+}
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    
+}
