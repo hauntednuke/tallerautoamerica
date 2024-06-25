@@ -1,4 +1,7 @@
-$verde3d: #0EB04B;
+$verde: #0EB04B;
+$grisOscuro: #31363A;
+$grisClaro: #40474E;
+
 
 
 html {
@@ -8,6 +11,7 @@ html {
     body {
         min-height: 100%;
         font-size: 1.6rem;
+        font-family: Inter;
     }
 }
 
@@ -16,4 +20,31 @@ html {
     padding: 0;
     box-sizing: inherit;
     
+}
+
+
+
+
+.fila {
+    display: flex;
+    flex-direction: row;
+}
+
+.fila-centrado {
+    align-items: center;
+    justify-content: center;
+}
+
+.login-logo {
+    width: 200px;
+}
+
+.login-titulo {
+    font-family: 'Bebas Neue';
+    font-weight: 900;
+    font-size: 6rem;
+}
+
+.login.boton {
+    background-color: $verde;
 }

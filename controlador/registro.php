@@ -20,12 +20,9 @@ require_once("modelo/usuario.php");
 		  		  
 			  $usuario->set_usuario($_POST['nombre_de_usuario']);
 			  $usuario->set_contrasena($_POST['contrasena']);
-			  if($accion=='login'){
-				echo  json_encode($usuario->busca());
+			  if($accion=='incluir'){
+				echo  json_encode($usuario->registrar_usuario());
 			  }
-              if(isset($_SESSION["loggedin"])) {
-                $pagina = "inicio"; exit;
-              }
 		  exit;
 	  }
 	  

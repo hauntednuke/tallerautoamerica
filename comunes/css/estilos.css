@@ -6,10 +6,35 @@ html {
 html body {
   min-height: 100%;
   font-size: 1.6rem;
+  font-family: Inter;
 }
 
 *, *:before, *:after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+.fila {
+  display: flex;
+  flex-direction: row;
+}
+
+.fila-centrado {
+  align-items: center;
+  justify-content: center;
+}
+
+.login-logo {
+  width: 200px;
+}
+
+.login-titulo {
+  font-family: "Bebas Neue";
+  font-weight: 900;
+  font-size: 6rem;
+}
+
+.login.boton {
+  background-color: #0EB04B;
 }/*# sourceMappingURL=estilos.css.map */
