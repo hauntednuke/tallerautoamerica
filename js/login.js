@@ -2,7 +2,7 @@
 
 
 
-$("#iniciar").on("click", iniciarSesion);
+/*$("#iniciar").on("click", iniciarSesion);
 
 
 function iniciarSesion() {
@@ -44,4 +44,4 @@ function enviaAjax(datos) {
       },
       complete: function () {},
     });
-  }
+  }*/

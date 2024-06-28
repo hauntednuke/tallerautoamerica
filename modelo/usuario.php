@@ -1,4 +1,4 @@
-<?php session_start();
+<?php
 
 require_once('modelo/conexion.php');
 
@@ -41,7 +41,7 @@ class Usuario extends Conexion {
         }
     }
 
-    public function busca() {
+    public function login_usuario() {
 		$conexion = $this->conectar();
 		$conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -55,8 +55,10 @@ class Usuario extends Conexion {
 			$consulta->execute();
             $resultado = $consulta->fetch(PDO::FETCH_ASSOC);
 			if ($resultado && password_verify($this->contrasena,$resultado["contrasena"])) {
+				$_SESSION["loggedin"] = true;
+				$_SESSION["usuario"]= $this->nombre_de_usuario;
 				return $resultado;
-                $_SESSION["loggedin"] = true;
+                
 			} else {
 				return "fallido";
 			}

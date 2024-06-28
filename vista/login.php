@@ -37,8 +37,9 @@
       </div>
   
       <div class="text-center text-lg-start mt-4 pt-2">
-        <button  id="iniciar"type="button" data-mdb-button-init data-mdb-ripple-init class="login-boton btn btn-lg"
-          style="padding-left: 2.5rem; padding-right: 2.5rem;">Iniciar Sesión</button>
+        <!--<button  id="iniciar"type="button" data-mdb-button-init data-mdb-ripple-init class="login-boton btn btn-lg"
+          style="padding-left: 2.5rem; padding-right: 2.5rem;">Iniciar Sesión</button>-->
+          <a href="?pagina=inicio">Iniciar Sesión</a>
       </div>
   
     </form>

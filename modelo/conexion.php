@@ -15,5 +15,7 @@ class Conexion {
         $pdo->exec("set names utf8");
         return $pdo;
     }
+
+    
 }
 ?>

@@ -7,6 +7,9 @@ html body {
   min-height: 100%;
   font-size: 1.6rem;
   font-family: Inter;
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
 }
 
 *, *:before, *:after {
@@ -37,4 +40,183 @@ html body {
 
 .login.boton {
   background-color: #0EB04B;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 400px;
+  padding: 3rem;
+  height: 100vh;
+  color: white;
+  background-color: #31363A;
+}
+nav ul {
+  margin-top: 3rem;
+  width: 100%;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+nav ul li {
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li span#icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  height: 5rem;
+  width: 3rem;
+}
+nav ul li a {
+  text-align: center;
+  margin-left: 1.5rem;
+  margin-right: auto;
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  color: inherit;
+}
+nav ul li#botonLogout {
+  margin-top: auto;
+}
+nav ul li:hover {
+  color: #0EB04B;
+  background-color: #40474E;
+}
+
+main#principal {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+main#principal h1.hero {
+  font-weight: bolder;
+}
+main#principal .botonRegistrar {
+  background-color: #0EB04B;
+  border: none;
+  border-radius: 0px;
+  color: white;
+  font-weight: bolder;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+main#principal div.container button {
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  border-radius: 3px 0px 0px 3px;
+}
+main#principal div.container input {
+  border: none;
+  background-color: #d4d4d4;
+  padding: 1rem 2rem;
+  border-radius: 0px 3px 3px 0px;
+}
+main#principal div.container table thead tr {
+  height: 5rem;
+}
+main#principal div.container table th#acciones {
+  text-align: center;
+}
+main#principal div.container table td#acciones {
+  text-align: center;
+}
+main#principal div.container table td#acciones span {
+  font-size: 2rem;
+  margin: auto;
+}
+main#principal div.container table td#acciones span.editar {
+  color: #0EB04B;
+  margin-right: 10px;
+}
+main#principal div.container table td#acciones span.borrar {
+  color: #B00E0E;
+  margin-left: 10px;
+}
+main#principal div.container table td#acciones span:hover {
+  cursor: pointer;
+}
+
+.height100 {
+  height: 100%;
+}
+
+textarea:focus, input:focus {
+  outline: none !important;
+}
+
+table.tablaprincipal thead {
+  background-color: #31363A;
+  color: white;
+}
+
+/*CABECERA DE TABLA*/
+div.dataTables_wrapper > div.row:first-child {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+}
+div.dataTables_wrapper > div.row:first-child div div.dataTables_length {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+div.dataTables_wrapper > div.row:first-child div div.dataTables_length label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-wrap: nowrap;
+  background-color: #31363A;
+  color: white;
+  padding-left: 1rem;
+}
+div.dataTables_wrapper > div.row:first-child div div.dataTables_length select {
+  margin-left: 1rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 0px;
+  background-color: #d4d4d4;
+}
+div.dataTables_wrapper > div.row:first-child div div.dataTables_filter {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+div.dataTables_wrapper > div.row:first-child div div.dataTables_filter label {
+  background-color: #31363A;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  padding-left: 2rem;
+}
+div.dataTables_wrapper > div.row:first-child div div.dataTables_filter label input {
+  margin-left: 3rem;
+  height: 100%;
+  font-size: 1.6rem;
+  max-width: 15rem;
+}
+
+div.dataTables_wrapper > div.row:first-child > div.col-sm-12 {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
+/*FIN CABECERA DE TABLA*/
+/* SEPARAR INFO DE TABLA*/
+div.dataTables_wrapper > div.row:last-child {
+  margin-top: 1.5rem;
 }/*# sourceMappingURL=estilos.css.map */

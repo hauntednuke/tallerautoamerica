@@ -2,7 +2,7 @@
 
 
 
-$("#enviar_registro").on("click", enviar_registro);
+/*$("#enviar_registro").on("click", enviar_registro);
 
 
 function enviar_registro() {
@@ -44,4 +44,4 @@ function enviaAjax(datos) {
       },
       complete: function () {},
     });
-  }
+  }*/
